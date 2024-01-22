@@ -4,7 +4,8 @@ import os
 from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
-
+import torch
+from modelscope import snapshot_download, AutoModel, AutoTokenizer
 
 
 def init():
